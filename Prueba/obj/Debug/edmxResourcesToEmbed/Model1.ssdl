@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PruebaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Conductor">
+    <Key>
+      <PropertyRef Name="conductorId" />
+    </Key>
+    <Property Name="conductorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="apellidos" Type="varchar" MaxLength="50" />
+    <Property Name="DNI" Type="varchar" MaxLength="50" />
+    <Property Name="fechaDeNacimiento" Type="date" />
+    <Property Name="tipoDeCarnet" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Material">
+    <Key>
+      <PropertyRef Name="materialId" />
+    </Key>
+    <Property Name="materialId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="conductorId" Type="int" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="200" />
+    <Property Name="fechaDeEntrega" Type="date" />
+    <Property Name="fechaDeDevolucion" Type="date" />
+  </EntityType>
+  <Association Name="FK_Material_Conductor">
+    <End Role="Conductor" Type="Self.Conductor" Multiplicity="0..1" />
+    <End Role="Material" Type="Self.Material" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Conductor">
+        <PropertyRef Name="conductorId" />
+      </Principal>
+      <Dependent Role="Material">
+        <PropertyRef Name="conductorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PruebaModelStoreContainer">
+    <EntitySet Name="Conductor" EntityType="Self.Conductor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Material" EntityType="Self.Material" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Material_Conductor" Association="Self.FK_Material_Conductor">
+      <End Role="Conductor" EntitySet="Conductor" />
+      <End Role="Material" EntitySet="Material" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

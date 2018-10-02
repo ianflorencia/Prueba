@@ -1,0 +1,17 @@
+c:\users\wildhawk\source\repos\Prueba\Prueba\bin\Debug\Prueba.exe.config
+c:\users\wildhawk\source\repos\Prueba\Prueba\bin\Debug\Prueba.exe
+c:\users\wildhawk\source\repos\Prueba\Prueba\bin\Debug\Prueba.pdb
+c:\users\wildhawk\source\repos\Prueba\Prueba\obj\Debug\Prueba.csprojAssemblyReference.cache
+c:\users\wildhawk\source\repos\Prueba\Prueba\obj\Debug\Prueba.Properties.Resources.resources
+c:\users\wildhawk\source\repos\Prueba\Prueba\obj\Debug\Prueba.csproj.GenerateResource.cache
+c:\users\wildhawk\source\repos\Prueba\Prueba\obj\Debug\Prueba.csproj.CoreCompileInputs.cache
+c:\users\wildhawk\source\repos\Prueba\Prueba\obj\Debug\Prueba.exe
+c:\users\wildhawk\source\repos\Prueba\Prueba\obj\Debug\Prueba.pdb
+C:\Users\wildhawk\source\repos\Prueba\Prueba\bin\Debug\EntityFramework.dll
+C:\Users\wildhawk\source\repos\Prueba\Prueba\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\wildhawk\source\repos\Prueba\Prueba\bin\Debug\EntityFramework.xml
+C:\Users\wildhawk\source\repos\Prueba\Prueba\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\wildhawk\source\repos\Prueba\Prueba\obj\Debug\Prueba.csproj.CopyComplete
+C:\Users\wildhawk\source\repos\Prueba\Prueba\obj\Debug\Prueba.FormularioPrincipal.resources
+C:\Users\wildhawk\source\repos\Prueba\Prueba\obj\Debug\Prueba.FormularioConductor.resources
+C:\Users\wildhawk\source\repos\Prueba\Prueba\obj\Debug\Prueba.FormularioMaterial.resources
